@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Flexbox Intro</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/black.css" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css" />
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "css/print/pdf.css"
+        : "css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
+
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>CSS Layouting mit Flexbox</h1>
+          <aside class="notes">
+            Layoutmodus, der eine einfache und saubere Möglichkeit bietet,
+            Elemente in einem Container anzuordnen.
+          </aside>
+        </section>
+        <section>
+          <h2>Agenda</h2>
+          <ol>
+            <li>Motivation</li>
+            <li>Kurze Einführung</li>
+            <li>Flexbox Froggy</li>
+          </ol>
+        </section>
+        <section>
+          <h2>Warum brauchen wir Flexbox Know How?</h2>
+          <ul>
+            <li>Reviews</li>
+            <li>Technische Schulden abbauen</li>
+            <li>Bugfixing</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Kurze Einführung</h2>
+        </section>
+        <section>
+          <h3>Wofür Flexbox?</h3>
+          <img src="./assets/css-family-guy.gif" alt="" />
+          <aside class="notes">
+            <ul>
+              <li>keine Floats</li>
+              <li>
+                Reihenfolge kann einfach angepasst werden ohne HTML/DOM zu
+                ändern
+              </li>
+              <li>
+                Fähigkeit Breite und Höhe so anzupassen, dass Elemente den
+                freien Platz im Container bestmöglich ausnutzen
+              </li>
+              <li>Für Anorderung in Reihe und Spalte</li>
+              <li>Positioniering ist viel einfacher</li>
+              <li>
+                Container Margins kollidieren nicht mit Margins seiner Kinder
+              </li>
+            </ul>
+          </aside>
+        </section>
+        <!-- <section>
+          <h3>Horizontales + Vertikales Zentrieren 🙏</h3>
+          <blockquote>
+            the hardest problem in web design was vertical centering
+          </blockquote>
+        </section> -->
+        <section>
+          <h3>Elemente verteilen</h3>
+          <img class="stretch" src="./assets/distribute.png" alt="" />
+        </section>
+        <section>
+          <h3>Elemente ausrichten</h3>
+          <img class="stretch" src="./assets/align.png" alt="" />
+        </section>
+        <section>
+          <h3>Responsivität (1/2)</h3>
+          <img class="stretch" src="./assets/desktop.png" alt="" />
+        </section>
+        <section>
+          <h3>Responsivität (2/2)</h3>
+          <img class="stretch" src="./assets/mobile.png" alt="" />
+        </section>
+        <section>
+          <h2>
+            <a target="_blank" href="http://flexboxfroggy.com/"
+              >Flexbox Froggy</a
+            >
+          </h2>
+          <img src="./assets/enough-talk.gif" alt="" />
+        </section>
+        <section>
+          <h2>Nützliche Links</h2>
+          <ul>
+            <li>
+              <a target="_blank" href="http://flexboxfroggy.com/"
+                >Flexbox Froggy</a
+              >
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+                >Complete Guide to Flexbox: </a
+              >Detaillierte Doku
+            </li>
+            <li>
+              <a target="_blank" href="http://codepen.io/enxaneta/full/adLPwv/"
+                >Flexbox Playground: </a
+              >Visuell Properties ausprobieren
+            </li>
+            <li>
+              <a target="_blank" href="https://github.com/philipwalton/flexbugs"
+                >Flexbugs: </a
+              >Flexbox issues mit Workarounds
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        dependencies: [
+          { src: "plugin/markdown/marked.js" },
+          { src: "plugin/markdown/markdown.js" },
+          { src: "plugin/notes/notes.js", async: true },
+          { src: "plugin/highlight/highlight.js", async: true }
+        ]
+      });
+    </script>
+  </body>
+</html>
